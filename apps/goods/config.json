@@ -1,0 +1,18 @@
+{
+    "primary": "true",
+    "alias": "goods",
+    "version": "0.1",
+    "requirements": {
+        "ones": ">= 0.3"
+    },
+    "navs" : {
+        "settings" : {
+            "childs" : {
+                "base_data_set" : {
+                    "goods_setting": "goods/list/goods",
+                    "goods_category": "goods/list/goodsCategory"
+                }
+            }
+        }
+    }
+}

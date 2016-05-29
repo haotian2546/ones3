@@ -1,0 +1,60 @@
+{
+    "urlMap": {
+        "crm": {
+            "name": "交易對象管理",
+            "modules": {
+                "RelationshipCompanyGroup": {
+                    "name": "分類",
+                    "actions": {
+                        "list": "分類列表",
+                        "add"  : "新增分類",
+                        "edit" : "修改分類訊息"
+                    }
+                },
+                "RelationshipCompany": {
+                    "name": "基本資料",
+                    "actions": {
+                        "list": "交易對象列表",
+                        "add": "新增交易對象",
+                        "edit": "修改交易對象資料"
+                    }
+                },
+                "RelationshipCompanyLinkman": {
+                    "name": "聯絡人",
+                    "actions": {
+                        "list": "聯絡人列表",
+                        "edit": "修改交易對象聯絡人"
+                    }
+                }
+            }
+        }
+    },
+    "lang": {
+        "navs": {
+            "rel_company": "交易對象管理",
+            "relCompanyGroup": "分類",
+            "relCompanyRecord": "基本資料",
+            "relCompanyContact": "聯絡人"
+        },
+        "widgetTitles": {
+            "relCompanyBaseInfo": "基本資料"
+        },
+        "AppCrm": {
+            "appName": "交易對象"
+        },
+        "contact": "聯絡人",
+        "tel": "電話",
+        "is_primary": "是否為主要聯絡人",
+        "linkMan": "交易對象聯絡人",
+        "supplier": "供應商",
+        "customer": "客戶",
+        "customer_id": "客戶",
+        "company_name": "公司名稱",
+        "relationshipCompany": "交易對象",
+        "relationshipCompanyLinkman": "交易對象聯絡人",
+
+        "crm.relationshipcompanylinkman" : "%s交易對象聯絡人",
+        "crm.relationshipcompany" : "%s交易對象",
+        "crm.relationshipcompanygroup" : "%s交易對象分類"
+    }
+}

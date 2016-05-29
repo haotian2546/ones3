@@ -1,0 +1,28 @@
+{
+    "alias": "store",
+    "version": "0.1",
+    "requirements": {
+        "ones": ">= 0.3",
+        "goods": ">= 0.1"
+    },
+    "workflow": ["Stockin", "Stockout", "StockTransfer"],
+    "navs": {
+        "stock": {
+            "icon": "database",
+            "childs": {
+                "stock_log": "store/list/stockLog,list",
+                "stock_list": "store/list/stockProductList,database",
+                "stockin_paper": "store/list/stockin,sign-in",
+                "stockout_paper": "store/list/stockout,sign-out",
+                "stock_warning": "store/list/stockWarning,warning"
+            }
+        },
+        "settings": {
+            "childs": {
+                "base_data_set": {
+                    "stock_manage": "store/list/stock"
+                }
+            }
+        }
+    }
+}

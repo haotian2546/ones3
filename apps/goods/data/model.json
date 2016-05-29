@@ -1,0 +1,70 @@
+{
+    "Goods": {
+        "id": {
+            "primary": true,
+            "hideInDetail": true
+        },
+        "factory_code": {
+            "ensureunique": "GoodsRes",
+            "hiddenWhen480": true
+        },
+        "name": {
+            "ensureunique": "GoodsRes",
+            "displayName": "色号",
+            "width": "200",
+            "style": "width:200px"
+        },
+        "pinyin": {
+            "displayName": ["firstChar"],
+            "required": false,
+            "listAble": false,
+            "hideInForm":true,
+            "hideInDetail": true
+        },
+        "measure": {},
+        "goods_category_id": {
+            "displayName": ["category"],
+            "inputType": "select",
+            "valueField": "id",
+            "nameField" : "prefix_name",
+            "listAble": false,
+            "dataSource": "GoodsCategoryRes",
+            "hiddenWhen480": true
+        },
+        "category_name": {
+            "displayName": ["category"],
+            "hideInForm": true,
+            "hiddenWhen480": true
+        },
+        "price": {
+            "cellFilter": "toCurrency:'￥'",
+            "value": 0.00,
+            "listAble": false,
+            "hideInForm":true,
+            "hideInDetail": true
+        },
+        "cost": {
+            "cellFilter": "toCurrency:'￥'",
+            "value": 0.00,
+            "listAble": false,
+            "hideInForm":true,
+            "hideInDetail": true
+        },
+        "store_min": {
+            "value": 0,
+            "listAble": false,
+            "hideInForm":true,
+            "hideInDetail": true
+        },
+        "store_max": {
+            "value": 0,
+            "listAble": false,
+            "hideInForm":true,
+            "hideInDetail": true
+        },
+
+        "_property": {
+            "columns": 2
+        }
+    }
+}

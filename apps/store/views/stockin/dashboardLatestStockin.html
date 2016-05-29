@@ -1,0 +1,42 @@
+<div class="panel panel-default" ng-controller="DashboardStockinCtl">
+    <div class="panel-heading widget-header-flat">
+        <h3 class="panel-title">
+            <i class="fa fa-sign-in"></i>
+            <a ng-click="$root.goPage('store/list/stockin')" ng-bind="'lang.widgetTitles.latestStockin'|lang"></a>
+        </h3>
+    </div>
+
+    <table class="table table-striped">
+        <thead class="thin-border-bottom">
+            <tr>
+                <th>
+                    <span ng-bind="'lang.bill_id'|lang"></span>
+                </th>
+
+                <th>
+                    <span ng-bind="'lang.subject'|lang"></span>
+                </th>
+
+                <th class="hidden-480">
+                    <span ng-bind="'lang.num'|lang"></span>
+                </th>
+                <th class="hidden-480">
+                    <span ng-bind="'lang.status'|lang"></span>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr ng-repeat="item in items">
+                <td>
+                    <a ng-click="$root.goPage('store/editBill/stockin/id/'+item.id)">{{item.bill_id}}</a>
+                </td>
+                <td ng-bind="item.subject"></td>
+                <td ng-bind="item.total_num"></td>
+                <td>
+                    <span class="badge badge-{{item.processes.currentNode.status_class}} arrowed-right arrowed-in" ng-bind="item.processes.currentNode.status_text"></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,23 @@
+{
+    "alias": "sale",
+    "version": "0.2",
+    "requirements": {
+        "ones": ">= 0.3",
+        "store": ">= 0.1",
+        "crm": ">= 0.1",
+        "goods": ">= 0.1"
+    },
+    "workflow": ["Orders", "Returns"],
+    "plugins": {},
+    "navs": {
+        "sale" : {
+            "icon": "pencil",
+            "childs" : {
+                "add_new_orders": "sale/addBill/orders,plus-square",
+                "orders": "sale/list/orders,th-list",
+                "returns": "sale/list/returns,mail-reply",
+                "analytics": "sale/analytics/orders,bar-chart-o"
+            }
+        }
+    }
+}

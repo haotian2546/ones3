@@ -1,0 +1,1 @@
+<?php	return array ( 'crm' => '0.1', 'store' => '0.1', 'uploader' => 0.10000000000000001, 'finance' => '0.2.1', 'purchase' => '0.1', 'sale' => '0.2', 'goods' => '0.1', 'department' => NULL, 'firstTimeWizard' => NULL, 'dashboard' => NULL, 'multiSearch' => NULL, 'services' => NULL, 'dataModel' => NULL, 'workflow' => NULL, );?>

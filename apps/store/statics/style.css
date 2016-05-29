@@ -1,0 +1,7 @@
+.batch-select-ul {
+    position:absolute;
+}
+.batch-select-ul li {
+    padding-left:10px;
+    cursor:pointer
+}

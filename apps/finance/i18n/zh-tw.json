@@ -1,0 +1,95 @@
+{
+    "urlMap": {
+        "finance": {
+            "name": "財務管理",
+                "modules": {
+                "FinanceRecord": {
+                    "name": "收付紀錄",
+                    "actions": {
+                        "list": ""
+                    }
+                },
+                "FinanceAccount": {
+                    "name": "財務帳戶",
+                    "actions": {
+                        "add": "",
+                        "list": ""
+                    }
+                },
+                "FinancePayPlan": {
+                    "name": "應付帳款",
+                    "actions": {
+                        "add": "",
+                        "list": ""
+                    }
+                },
+                "FinanceReceivePlan": {
+                    "name": "應收帳款",
+                    "actions": {
+                        "add": "",
+                        "list": ""
+                    }
+                }
+            }
+        },
+        "doWorkflow": {
+            "modules": {
+                "FinanceReceivePlan": {
+                    "name": "應收帳款",
+                    "actions": {
+                        "confirm": "確認收款"
+                    }
+                }
+            }
+        }
+    },
+    "lang": {
+        "_links": {
+            "FinanceReceive": {
+                "detail": "finance/edit/financeReceivePlan/id/+source_id"
+            },
+            "FinancePay": {
+                "detail": "finance/edit/financePayPlan/id/+source_id"
+            }
+        },
+        "navs": {
+            "finance": "財務管理",
+            "finance_account": "帳戶管理",
+            "finance_record" : "收付紀錄",
+            "finance_receive_plan": "應收帳款",
+            "finance_pay_plan": "應付帳款"
+        },
+        "widgetTitles": {
+            "confirm_finance_receive": "確認收款",
+            "confirm_finance_pay": "確認付款"
+        },
+        "AppFinance": {
+            "appName": "基礎財務模組"
+        },
+        "messages": {
+            "all_money_has_payed": "已完成付款",
+            "all_money_has_received": "已完成收款"
+        },
+        "financeReceivePlan": "應收帳款",
+        "financePayPlan": "應付帳款",
+        "balance_direction": "餘額方向",
+        "record_type": "紀錄類型",
+        "account": "帳戶",
+        "financer": "財務人員",
+        "balance": "餘額",
+        "received": "已收",
+        "payed": "已付",
+        "unreceived": "未收",
+        "unpayed": "未付",
+
+        "types" : {
+            "receive" : "收款類別",
+            "pay"     : "付款類別"
+        },
+
+        "finance.financeaccount": "%s帳戶管理",
+        "finance.financepayplan": "%s財務付款計劃",
+        "finance.financereceiveplan": "%s財務收款計劃",
+        "finance.financerecord": "%s財務收付紀錄"
+    }
+}
