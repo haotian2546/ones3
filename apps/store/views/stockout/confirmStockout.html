@@ -27,10 +27,11 @@
         <div class="billFooter clearfix">
             <div class="row form-group">
                 <label class="col-sm-1 text-right">
-                    {{'lang.memo'|lang}}
+                    {{'lang.memo1'|lang}}
                 </label>
                 <div class="col-sm-11">
                     <input type="text" ng-model="formMetaData.memo" class="width-100" />
+                    <input type="hidden" ng-model="formMetaData.type" value="1" class="stock_type"/>
                 </div>
             </div>
             <div class="row">

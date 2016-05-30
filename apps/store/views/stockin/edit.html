@@ -28,9 +28,10 @@
         </div>
         <div class="billFooter clearfix">
             <div class="row mt-10">
-                <label class="col-sm-1 text-right" ng-bind="'lang.memo'|lang"></label>
+                <label class="col-sm-1 text-right" ng-bind="'lang.memo1'|lang"></label>
                 <div class="col-sm-11">
                     <input type="text" ng-model="formMetaData.memo" class="width-100 form-control" />
+                    <input type="hidden" ng-model="formMetaData.type" value="0" class="stock_type"/>
                 </div>
             </div>
             <div class="row mt-10">

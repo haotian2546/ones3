@@ -1536,14 +1536,20 @@
                                 parentScope[self.opts.dataName][context.trid].discount = parentScope.formMetaData.customerInfo.discount;
                             }
                             var totalNum = 0;
+                            var store_type = 0;
+                            store_type = Number($(".stock_type").val());
                             angular.forEach(parentScope[self.opts.dataName], function(item){
                                 if(!item || !item.num) {
                                     return;
                                 }
+                                if(store_type ==0) {
+                                    self.parentScope[self.opts.dataName][context.trid].memo = Number(item.num) + Number(item.store_num);
+                                }else {
+                                    self.parentScope[self.opts.dataName][context.trid].memo = Number(item.store_num) - Number(item.num);
+                                }
                                 totalNum += Number(item.num);
                             });
                             parentScope.formMetaData.total_num = totalNum;
-
                             if(parentScope[self.opts.dataName][context.trid] && parentScope[self.opts.dataName][context.trid].goods_id) {
                                 if(!parentScope[self.opts.dataName][context.trid].unit_price){
                                     var gid = parentScope[self.opts.dataName][context.trid].goods_id.split("_");
