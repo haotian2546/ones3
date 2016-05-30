@@ -24,9 +24,7 @@ class StockProductListAction extends CommonAction {
         "goods_name",
         "measure",
         "stock_name",
-        "num",
-        "store_min",
-        "store_max"
+        "num"
     );
 
     public function index() {

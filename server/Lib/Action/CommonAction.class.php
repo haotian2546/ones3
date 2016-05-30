@@ -860,8 +860,8 @@ class CommonAction extends RestAction {
             return;
         }
 
-        import("@.ORG.excel.XMLExcel");
-        $xls=new XMLExcel;
+        import("@.ORG.excel.XmlExcel");
+        $xls=new XmlExcel;
         $xls->setDefaultWidth(80);
         $xls->setDefaultHeight(20);
         $xls->setDefaultAlign("center");
