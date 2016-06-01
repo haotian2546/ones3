@@ -4,7 +4,7 @@
     <meta name="renderer" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8" />
-    <title>ONES Login Page</title>
+    <title>修安家居管理系统</title>
     <meta name="description" content="User login page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <link rel="shortcut icon" href="common/statics/images/favicon.ico" />
@@ -79,14 +79,14 @@
                     <button class="signin-btn bg-primary" ng-click="doLogin()" ng-disabled="LoginForm.$invalid">
                         <span ng-bind="'lang.actions.login'|lang"></span>
                     </button>
-                    <a href="#" class="forgot-password" id="forgot-password-link">
+                    <!--<a href="#" class="forgot-password" id="forgot-password-link">
                         <span ng-bind="'lang.messages.i_fogot_password'|lang"></span>
-                    </a>
+                    </a>-->
                 </div>
             </form>
 
             <div class="signin-with">
-                Present by <a href="#" target="_blank">ONES Team</a> &copy; 2014
+                Present by <a href="#" target="_blank">KingMo</a> &copy; 2015
             </div>
 
             <div class="password-reset-form" id="password-reset-form" style="display: none;">

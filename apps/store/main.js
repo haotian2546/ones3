@@ -354,7 +354,7 @@
                                 multiple: true,
                                 nameField: "prefix_name",
                                 dataSource: "GoodsCategoryRes"
-                            },
+                            }/*,
                             stockWarningOnly: {
                                 inputType: "select",
                                 dataSource: [
@@ -368,7 +368,7 @@
                                     }
                                 ],
                                 required: false
-                            }
+                            }*/
                         };
                         return struct;
                     }
